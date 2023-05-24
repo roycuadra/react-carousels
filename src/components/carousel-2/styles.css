@@ -1,0 +1,107 @@
+html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f8f8f8;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #131114;
+  padding: 0 8px;
+}
+
+h1 {
+  color: #f9f9f9;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+nav .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: #f9f9f9;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: transparent;
+}
+
+button.active {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+h2 {
+  color: #1a1a1a;
+  margin: 0 0 6px;
+  width: 100%;
+}
+
+p {
+  color: #545454;
+  margin-bottom: 0;
+}
+
+.carousel .slide img {
+  width: 250px;
+  margin-bottom: 60px;
+  padding: 40px;
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+.carousel-root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.carousel-slider,
+.slider-wrapper,
+.slider {
+  height: 100%;
+}
+
+.slider li {
+  display: flex;
+  cursor: grab;
+}
+
+.slider li div {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 15%;
+  text-align: left;
+}
+
+.carousel .slide {
+  min-height: 100vh;
+}
